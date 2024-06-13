@@ -12,7 +12,7 @@
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
-        "copper_text_upright": false,
+        "copper_text_upright": true,
         "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
@@ -29,13 +29,13 @@
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
-        "fab_text_upright": false,
+        "fab_text_upright": true,
         "other_line_width": 0.15,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
         "other_text_thickness": 0.15,
-        "other_text_upright": false,
+        "other_text_upright": true,
         "pads": {
           "drill": 0.762,
           "height": 1.524,
@@ -46,7 +46,7 @@
         "silk_text_size_h": 0.8,
         "silk_text_size_v": 0.8,
         "silk_text_thickness": 0.1,
-        "silk_text_upright": false,
+        "silk_text_upright": true,
         "zones": {
           "min_clearance": 0.5
         }
@@ -58,7 +58,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_over_copper|138400000|108263636|3f6f0157-8c1d-4c40-8800-b793d143b3c7|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -123,7 +125,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -498,7 +500,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -606,6 +608,11 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "aefaade3-d74a-40b5-8c26-ca1f47dd8d0b",
+      "Root"
+    ]
+  ],
   "text_variables": {}
 }
